@@ -112,13 +112,20 @@ nav .center-col ul .main-btn.arrow {
 .main-btn.arrow .btn-arrow {
     position: absolute;
     top: 2px;
-    right: 5px;
+    right: 3px;
     font-size: 0.5rem;
+    padding: 3px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .main-btn:hover,
 .second-btn:hover {
     background-color: var(--gray); 
+}
+
+.main-btn:hover .btn-arrow:hover {
+    background-color: var(--dark-gray); 
 }
 /* second-bar */
 header .second-bar {
