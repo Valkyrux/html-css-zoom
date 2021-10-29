@@ -82,6 +82,11 @@ nav .center-col ul .main-btn.arrow {
     padding-right: 10px;
     border-radius: 0px;
 }
+
+.right-col button:hover {
+    background-color: var(--red);
+    color: white;
+}
 /* main-bar-button */
 .main-btn {
     color: white;
@@ -111,8 +116,9 @@ nav .center-col ul .main-btn.arrow {
     font-size: 0.5rem;
 }
 
-.main-btn:hover {
-    background-color:var(--gray); 
+.main-btn:hover,
+.second-btn:hover {
+    background-color: var(--gray); 
 }
 /* second-bar */
 header .second-bar {
@@ -122,9 +128,9 @@ header .second-bar {
     padding: 10px;
 }
 
-header .second-bar .second-btn{
+.second-btn{
     margin-left: 10px;
-    background-color: var(--gray);
+    background-color: var(--dark-gray);
     color: white;
     border: 0;
     padding: 5px;
