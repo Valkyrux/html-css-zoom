@@ -1,0 +1,86 @@
+/* palette */
+:root {
+    --dark-gray: #222222;
+    --gray: #4a4a4a;
+    --green: #4bc800;
+    --red: #dc261c;
+}
+/* basic layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+nav.main-bar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-gray);
+    display: flex;
+}
+
+nav .left-col,
+nav .right-col {
+    width: 20%;
+}
+
+nav .center-col {
+    width: 60%;
+    height: 100%;
+}
+
+.main-bar ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/* main-bar-button */
+.main-btn {
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    border: 0px;
+    text-align: center;
+    margin: 5px 10px;
+    padding: 5px 15px; 
+}
+
+.main-btn .btn-text {
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.main-btn.arrow {
+    position: relative;
+}
+
+.main-btn.arrow .btn-arrow {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 0.5rem;
+}
+
+.main-btn:hover {
+    background-color:var(--gray); 
+}
